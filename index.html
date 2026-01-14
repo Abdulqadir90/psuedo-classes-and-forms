@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"
-    <title>Psuedo Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pseudo Form</title>
 </head>
 
 <body>
 
-<form>
+<form class="container">
     <h2>Contact Us</h2>
 
     <label>Name
-        <input type="text">
+        <input type="text" placeholder="Your name" required>
     </label>
 
     <label>Email
-        <input type="text">
+        <input type="email" placeholder="Your email" required>
     </label>
 
     <label>Password
-        <input type="text">
+        <input type="password" placeholder="8 character Minimum" require minlength="8">
     </label>
 
     <label> Why are you contacting us today?
-        <option>ndndndnd</option>
-        <option>dndnjd</option>
-        <option>kdddkdk</option>
+        <select required>
+        <option>Only select one</option>
+        <option>Appointments</option>
+        <option>Support</option>
+        <option>Careers</option>
+
+        </select>
 
     </label>
 
