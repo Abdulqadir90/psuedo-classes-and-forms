@@ -39,6 +39,8 @@ body{
 
 
   /* - `:required` - to visually indicate which fields are mandatory. */
+  /* this is a psuedo element that inserts the contect after the label which visually show which */
+  /* required fields need filling in */
 label.required::after {
     content: "*";
     color: var(--wrong-color);
@@ -52,10 +54,10 @@ label.required::after {
 }
 
 /*  - `:hover` - to enhance the button when the user hovers over it. */
-
+/* button grows x1.5 */
 .container button:hover{
     background-color: var(--secondary-color);
-    transform: scale(1.5);
+    transform: scale(1.5); 
 }
 
 /* - `:valid` and `:invalid` - to show different styles based on whether inputs meet certain criteria (e.g., correct email format). */
