@@ -11,10 +11,6 @@
 }
 
 
-
-
-
-
 body{
     background-color: rgb(19, 110, 238);
     display: flex;
@@ -32,22 +28,20 @@ body{
 }
 
 
-
 .container h2{
     text-align: center;
 } 
-
 
 .container label{
     display: block;
     margin-top: 20px;
 }
 
-.container input:required::after,
-.container select:required::after {
+
+  /* - `:required` - to visually indicate which fields are mandatory. */
+label.required::after {
     content: "*";
     color: var(--wrong-color);
-   
 }
 
 
@@ -62,4 +56,16 @@ body{
 .container button:hover{
     background-color: var(--secondary-color);
     transform: scale(1.5);
+}
+
+/* - `:valid` and `:invalid` - to show different styles based on whether inputs meet certain criteria (e.g., correct email format). */
+
+input:valid,
+select:valid{
+    border-color: rgb(13, 13, 204);
+}
+
+input:invalid,
+select:invalid {
+    border-color: crimson;
 }
